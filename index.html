@@ -3,16 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12% Coffee - Thưởng thức hương vị đích thực</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV - Huynh Gia Huy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #525252; /* Màu nền ngoài CV */
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            background-color: #ffffff;
+            width: 800px;
+            min-height: 1050px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Khối màu xanh bo góc ở góc trên bên trái */
+        .bg-shape {
+            position: absolute;
+            top: -150px;
+            left: -150px;
+            width: 550px;
+            height: 600px;
+            background-color: #e6f0fa;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .left-column {
+            width: 35%;
+            padding: 50px 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .right-column {
+            width: 65%;
+            padding: 50px 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Profile Image */
+        .profile-pic {
+            width: 160px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 40px;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Tiêu đề các mục (CONTACT, SKILLS, EXPERIENCE...) */
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000;
+            border-top: 2px solid #3b71ca; /* Đường viền màu xanh */
+            padding-top: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Phần Contact */
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            font-size: 14px;
+            color: #000;
+            line-height: 1.4;
+        }
+
+        .contact-list i {
+            font-size: 16px;
+            width: 25px;
+            margin-top: 2px;
+            color: #000;
+        }
+
+        /* Phần Cột Phải */
+        .name-title {
+            font-size: 42px;
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 60px;
+            margin-top: 20px;
+        }
+
+        .main-section {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <h1>Chào mừng đến với 12% Coffee ☕</h1>
-            <p>Khởi đầu ngày mới hoàn hảo với những ly cà phê đậm vị, được rang xay tỉ mỉ và không gian thư giãn tuyệt vời dành riêng cho bạn.</p>
-            <button class="btn">Khám phá Menu</button>
+
+    <div class="cv-container">
+        <div class="bg-shape"></div>
+
+        <div class="left-column">
+            <img src="https://via.placeholder.com/160x200" alt="Profile Picture" class="profile-pic">
+
+            <div class="contact-section">
+                <h2 class="section-title">Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Ho Chi Minh, Ca Mau<br>City</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0796251953</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>lykha0703@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skills-section">
+                <h2 class="section-title">Skills</h2>
+                </div>
+        </div>
+
+        <div class="right-column">
+            <h1 class="name-title">Huynh Gia Huy</h1>
+
+            <div class="main-section">
+                <h2 class="section-title">Experience</h2>
+                </div>
+
+            <div class="main-section">
+                <h2 class="section-title">Education</h2>
+                </div>
         </div>
     </div>
+
 </body>
 </html>
