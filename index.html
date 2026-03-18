@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #525252; /* Màu nền ngoài CV */
+            background-color: #525252;
             display: flex;
             justify-content: center;
             padding: 40px 20px;
@@ -30,7 +30,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        /* Khối màu xanh bo góc ở góc trên bên trái */
         .bg-shape {
             position: absolute;
             top: -150px;
@@ -56,7 +55,6 @@
             z-index: 1;
         }
 
-        /* Profile Image */
         .profile-pic {
             width: 160px;
             height: 200px;
@@ -66,20 +64,18 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        /* Tiêu đề các mục (CONTACT, SKILLS, EXPERIENCE...) */
         .section-title {
             font-size: 16px;
             font-weight: 700;
             color: #000;
-            border-top: 2px solid #3b71ca; /* Đường viền màu xanh */
+            border-top: 2px solid #3b71ca;
             padding-top: 10px;
             margin-top: 30px;
             margin-bottom: 20px;
             text-transform: uppercase;
         }
 
-        /* Phần Contact */
-        .contact-list {
+        .contact-list, .skills-list {
             list-style: none;
         }
 
@@ -88,7 +84,7 @@
             align-items: flex-start;
             margin-bottom: 18px;
             font-size: 14px;
-            color: #000;
+            color: #333;
             line-height: 1.4;
         }
 
@@ -96,21 +92,78 @@
             font-size: 16px;
             width: 25px;
             margin-top: 2px;
-            color: #000;
+            color: #3b71ca;
         }
 
-        /* Phần Cột Phải */
+        .skills-list li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 5px;
+        }
+
+        .skill-tag {
+            background-color: #f0f4f8;
+            color: #3b71ca;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
         .name-title {
             font-size: 42px;
             font-weight: 800;
             color: #000;
             margin-bottom: 60px;
             margin-top: 20px;
+            line-height: 1.1;
         }
 
         .main-section {
             margin-bottom: 40px;
         }
+
+        .item-box {
+            margin-bottom: 25px;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            color: #3b71ca;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .item-desc {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .item-desc ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .item-desc li {
+            margin-bottom: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -119,7 +172,7 @@
         <div class="bg-shape"></div>
 
         <div class="left-column">
-            <img src="https://via.placeholder.com/160x200" alt="Profile Picture" class="profile-pic">
+            <img src="avatar.jpg" alt="Profile Picture" class="profile-pic">
 
             <div class="contact-section">
                 <h2 class="section-title">Contact</h2>
@@ -141,19 +194,96 @@
 
             <div class="skills-section">
                 <h2 class="section-title">Skills</h2>
-                </div>
+                <ul class="skills-list">
+                    <li>Ngôn ngữ lập trình
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </li>
+                    <li style="margin-top: 15px;">Web Development
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML/CSS/JS</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">API Integration</span>
+                        </div>
+                    </li>
+                    <li style="margin-top: 15px;">Cloud & DevOps
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">GCP</span>
+                        </div>
+                    </li>
+                    <li style="margin-top: 15px;">Tools & Design
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git/GitHub</span>
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">Windows Forms</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="right-column">
             <h1 class="name-title">Huynh Gia Huy</h1>
 
             <div class="main-section">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title">Experience & Projects</h2>
+                
+                <div class="item-box">
+                    <h3 class="item-title">Website "12% Coffee"</h3>
+                    <div class="item-subtitle">Full-stack Developer & Designer</div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>Phát triển trang web quảng bá thương hiệu bằng HTML, CSS, JavaScript và PHP/MySQL.</li>
+                            <li>Tự thiết kế hình ảnh sản phẩm, banner quảng cáo và logo nhận diện thương hiệu.</li>
+                            <li>Cấu hình database và triển khai hosting website thực tế lên nền tảng InfinityFree.</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div class="item-box">
+                    <h3 class="item-title">Công cụ trích xuất dữ liệu YouTube</h3>
+                    <div class="item-subtitle">Python Developer</div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>Xây dựng script Python tích hợp YouTube Data API v3.</li>
+                            <li>Tự động hóa quá trình thu thập hàng loạt comment từ video và trích xuất dữ liệu ra file định dạng CSV phục vụ việc phân tích.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item-box">
+                    <h3 class="item-title">Quản lý dự án liên ngành</h3>
+                    <div class="item-subtitle">Project Manager / Team Leader</div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>Điều phối và kết nối công việc nhóm bao gồm các thành viên từ nhiều chuyên ngành: Công nghệ thông tin, Thiết kế đồ họa và Thương mại.</li>
+                            <li>Lên ý tưởng chủ đề và thuyết trình (bao gồm slide về API) hiệu quả trước tập thể.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <div class="main-section">
                 <h2 class="section-title">Education</h2>
+                
+                <div class="item-box">
+                    <h3 class="item-title">Công nghệ thông tin</h3>
+                    <div class="item-subtitle">Sinh viên Khóa K29</div>
+                    <div class="item-desc">
+                        <ul>
+                            <li>Nắm vững nền tảng khoa học máy tính, lập trình và phát triển phần mềm.</li>
+                            <li>Am hiểu các kiến thức mở rộng về Khoa học môi trường (biến đổi khí hậu, phát triển bền vững) và Khoa học chính trị - Pháp luật.</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
 
