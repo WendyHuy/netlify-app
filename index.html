@@ -3,285 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Huynh Gia Huy</title>
+    <title>CV - Huy Huynh Gia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #525252;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-
-        .cv-container {
-            background-color: #ffffff;
-            width: 800px;
-            min-height: 1050px;
-            display: flex;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .bg-shape {
-            position: absolute;
-            top: -150px;
-            left: -150px;
-            width: 550px;
-            height: 600px;
-            background-color: #e6f0fa;
-            border-radius: 50%;
-            z-index: 0;
-        }
-
-        .left-column {
-            width: 35%;
-            padding: 50px 30px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .right-column {
-            width: 65%;
-            padding: 50px 40px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .profile-pic {
-            width: 160px;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 40px;
-            border: 2px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .section-title {
-            font-size: 16px;
-            font-weight: 700;
-            color: #000;
-            border-top: 2px solid #3b71ca;
-            padding-top: 10px;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        .contact-list, .skills-list {
-            list-style: none;
-        }
-
-        .contact-list li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 18px;
-            font-size: 14px;
-            color: #333;
-            line-height: 1.4;
-        }
-
-        .contact-list i {
-            font-size: 16px;
-            width: 25px;
-            margin-top: 2px;
-            color: #3b71ca;
-        }
-
-        .skills-list li {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #333;
-            font-weight: 500;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 5px;
-        }
-
-        .skill-tag {
-            background-color: #f0f4f8;
-            color: #3b71ca;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .name-title {
-            font-size: 42px;
-            font-weight: 800;
-            color: #000;
-            margin-bottom: 60px;
-            margin-top: 20px;
-            line-height: 1.1;
-        }
-
-        .main-section {
-            margin-bottom: 40px;
-        }
-
-        .item-box {
-            margin-bottom: 25px;
-        }
-
-        .item-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .item-subtitle {
-            font-size: 14px;
-            color: #3b71ca;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .item-desc {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.6;
-        }
-        
-        .item-desc ul {
-            padding-left: 20px;
-            margin-top: 5px;
-        }
-        
-        .item-desc li {
-            margin-bottom: 5px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="cv-container">
-        <div class="bg-shape"></div>
+    <div class="resume-wrapper">
+        <div class="top-banner"></div>
 
-        <div class="left-column">
-            <img src="avatar.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="resume-body">
+            <div class="left-column">
+                <h1 class="name">HUY HUYNH GIA</h1>
+                <p class="role">Học sinh</p>
+                <div class="divider"></div>
 
-            <div class="contact-section">
-                <h2 class="section-title">Contact</h2>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Ho Chi Minh, Ca Mau<br>City</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>0796251953</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>lykha0703@gmail.com</span>
-                    </li>
-                </ul>
+                <div class="section">
+                    <h2 class="section-title">BẢN TÓM TẮT</h2>
+                    <ul class="main-list">
+                        <li>Chuyên viên chú ý đến từng chi tiết với hơn 3 năm kinh nghiệm trong <strong>[lĩnh vực]</strong>. Thành phố <strong>[các kỹ năng chính]</strong>. Mong muốn đóng góp cho <strong>[nhóm/loại công ty hoặc mục tiêu]</strong>.</li>
+                        <li>Sinh viên mới tốt nghiệp năng động, có nền kiến thức trong lĩnh vực <strong>[lĩnh vực]</strong>. Mong muốn áp dụng các kỹ năng trong <strong>[kỹ năng lĩnh vực]</strong> và phát triển trong một tổ chức năng động.</li>
+                        <li>Một [vai trò chơi] có kinh nghiệm trong <strong>[lĩnh vực/ngành]</strong>, thành nhẹ <strong>[2-3 kỹ năng hàng đầu]</strong> và mong muốn tạo ra tác động có ý nghĩa.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">KINH NGHIỆM</h2>
+                    <h3 class="job-title">Sinh viên, Đại học Văn Lang, Hồ Chí Minh, Việt Nam</h3>
+                    <p class="date">Tháng 9 năm 2024 — Tháng 9 năm 2028</p>
+                    <ul class="main-list">
+                        <li>Phát triển kỹ năng lãnh đạo thông qua các dự án nhóm và thuyết trình.</li>
+                        <li>Xây dựng mạng lưới quan hệ chuyên nghiệp vững mạnh với đồng nghiệp và người hướng dẫn.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
             </div>
 
-            <div class="skills-section">
-                <h2 class="section-title">Skills</h2>
-                <ul class="skills-list">
-                    <li>Ngôn ngữ lập trình
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">PHP</span>
-                        </div>
-                    </li>
-                    <li style="margin-top: 15px;">Web Development
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML/CSS/JS</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">API Integration</span>
-                        </div>
-                    </li>
-                    <li style="margin-top: 15px;">Cloud & DevOps
-                        <div class="skill-tags">
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Kubernetes</span>
-                            <span class="skill-tag">Azure</span>
-                            <span class="skill-tag">GCP</span>
-                        </div>
-                    </li>
-                    <li style="margin-top: 15px;">Tools & Design
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git/GitHub</span>
-                            <span class="skill-tag">Graphic Design</span>
-                            <span class="skill-tag">Windows Forms</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <div class="right-column">
+                <img src="avatar.jpg" alt="Profile Picture" class="profile-pic">
 
-        <div class="right-column">
-            <h1 class="name-title">Huynh Gia Huy</h1>
+                <div class="divider"></div>
 
-            <div class="main-section">
-                <h2 class="section-title">Experience & Projects</h2>
-                
-                <div class="item-box">
-                    <h3 class="item-title">Website "12% Coffee"</h3>
-                    <div class="item-subtitle">Full-stack Developer & Designer</div>
-                    <div class="item-desc">
-                        <ul>
-                            <li>Phát triển trang web quảng bá thương hiệu bằng HTML, CSS, JavaScript và PHP/MySQL.</li>
-                            <li>Tự thiết kế hình ảnh sản phẩm, banner quảng cáo và logo nhận diện thương hiệu.</li>
-                            <li>Cấu hình database và triển khai hosting website thực tế lên nền tảng InfinityFree.</li>
-                        </ul>
+                <div class="section">
+                    <h2 class="section-title-right">CHI TIẾT</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>lykha0703@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="address-text">
+                                <span>Thành phố Hồ Chí Minh,<br>Việt Nam,</span>
+                                <span>Việt<br>Nam</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+84796251953</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h2 class="section-title-right">KỸ NĂNG</h2>
+                    <ul class="skills-list">
+                        <li>Tư duy phản biện</li>
+                        <li>Sự hợp tác</li>
+                        <li>Phân tích dữ liệu</li>
+                    </ul>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section">
+                    <h2 class="section-title-right">LANGUAGES</h2>
+                    <div class="language-item">
+                        <span class="lang-name">English</span>
+                        <div class="level-bar">
+                            <div class="fill"></div>
+                            <div class="fill"></div>
+                            <div class="empty"></div>
+                            <div class="empty"></div>
+                            <div class="empty"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="item-box">
-                    <h3 class="item-title">Công cụ trích xuất dữ liệu YouTube</h3>
-                    <div class="item-subtitle">Python Developer</div>
-                    <div class="item-desc">
-                        <ul>
-                            <li>Xây dựng script Python tích hợp YouTube Data API v3.</li>
-                            <li>Tự động hóa quá trình thu thập hàng loạt comment từ video và trích xuất dữ liệu ra file định dạng CSV phục vụ việc phân tích.</li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="divider"></div>
 
-                <div class="item-box">
-                    <h3 class="item-title">Quản lý dự án liên ngành</h3>
-                    <div class="item-subtitle">Project Manager / Team Leader</div>
-                    <div class="item-desc">
-                        <ul>
-                            <li>Điều phối và kết nối công việc nhóm bao gồm các thành viên từ nhiều chuyên ngành: Công nghệ thông tin, Thiết kế đồ họa và Thương mại.</li>
-                            <li>Lên ý tưởng chủ đề và thuyết trình (bao gồm slide về API) hiệu quả trước tập thể.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-section">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="item-box">
-                    <h3 class="item-title">Công nghệ thông tin</h3>
-                    <div class="item-subtitle">Sinh viên Khóa K29</div>
-                    <div class="item-desc">
-                        <ul>
-                            <li>Nắm vững nền tảng khoa học máy tính, lập trình và phát triển phần mềm.</li>
-                            <li>Am hiểu các kiến thức mở rộng về Khoa học môi trường (biến đổi khí hậu, phát triển bền vững) và Khoa học chính trị - Pháp luật.</li>
-                        </ul>
-                    </div>
+                <div class="section">
+                    <h2 class="section-title-right">CERTIFICATIONS AND LICENSES</h2>
+                    <p class="cert-text">Certifications English B2 Aptis</p>
                 </div>
             </div>
         </div>
